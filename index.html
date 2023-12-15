@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Divisas</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/money.ico"∫
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <section class="converter-container">
+      <h1 class="converter-title">Calculadora de Divisas</h1>
+      <label for="converter-input">Pesos Chilenos:</label>
+      <input
+        type="number"
+        class="text-input"
+        id="converter-input"
+        step="0.01"
+        placeholder="Cantidad"
+      />
+      <label for="converter-select">a:</label>
+      <select
+        class="select-input"
+        name="converter-select"
+        id="converter-select"
+      >
+        <option value="dolar">US Dolar</option>
+        <option value="euro">Euro</option>
+      </select>
+
+      <button class="btn" id="converter-btn">Convertir</button>
+      <button id="reset-btn">Reiniciar Conversión</button>
+      <div class="converter-text" id="converter-text"></div>
+      <div id="chart-container"></div>
+    </section>
+    <script src="./assets/js/script.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1//dist/chart.umd.min.js"
+      defer
+    ></script>
+  </body>
+</html>
